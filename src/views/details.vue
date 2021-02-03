@@ -12,5 +12,4 @@ name: "details"
 </script>
 
 <style scoped>
-
 </style>
