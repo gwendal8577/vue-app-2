@@ -1,18 +1,27 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>home</div>
+    <p>{{data()}}</p>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+new Vue({
+  el: '#app',
+  data () {
+    return {
+      info: null
+    }
+  },
+  mounted () {
+    axios
+        .get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
+        .then(response => (this.info = response))
   }
-}
+})
 </script>
