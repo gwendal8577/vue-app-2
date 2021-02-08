@@ -1,5 +1,7 @@
 <template>
-
+  <div class="details">
+    {{name}}
+  </div>
 </template>
 
 <script>
