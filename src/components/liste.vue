@@ -42,16 +42,16 @@ export default {
   },
   methods: {
     getList(){
-      axios
-          .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?language=fr&num=5&offset=0')
-          .then(response => (this.listeCarte = response.data))
-    },
+            axios
+                .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?language=fr&num=5&offset=0')
+                .then(response => (this.listeCarte = response.data))
+          },
     getDetails(name){
       router.go("/details/"+name);
     },
     visuliserCarte(carte){
       document.location.href=carte
-    }
+    },
   },
 }
 </script>
