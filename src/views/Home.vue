@@ -8,7 +8,6 @@
 import liste from '../components/liste.vue'
 export default {
   name: "home",
-  props: "name",
   components: {
     liste
   }
