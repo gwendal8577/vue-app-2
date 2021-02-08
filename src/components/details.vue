@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import details from './components/details.vue'
 export default {
 name: "details"
 }
 </script>
 
 <style scoped>
+
 </style>
