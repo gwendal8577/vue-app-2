@@ -26,11 +26,11 @@
          <td class="column"> {{Details.data[0].desc}}</td>
          <td class="column"> {{Details.data[0].race}}</td>
          <td class="column"> {{Details.data[0].archetype}}</td>
-         <td class="column"> {{Details.data[0].card_prices.cardmarket_price}}</td>
-         <td class="column"> {{Details.data[0].card_prices.tcgplayer_price}}</td>
-         <td class="column"> {{Details.data[0].card_prices.ebay_price}}</td>
-         <td class="column"> {{Details.data[0].card_prices.amazon_price}}</td>
-         <td class="column"> {{Details.data[0].card_prices.coolstuffinc_price}}</td>
+         <td class="column"> {{Details.data[0].card_prices[0].cardmarket_price}}</td>
+         <td class="column"> {{Details.data[0].card_prices[0].tcgplayer_price}}</td>
+         <td class="column"> {{Details.data[0].card_prices[0].ebay_price}}</td>
+         <td class="column"> {{Details.data[0].card_prices[0].amazon_price}}</td>
+         <td class="column"> {{Details.data[0].card_prices[0].coolstuffinc_price}}</td>
        </tr>
       </tbody>
     </table>
