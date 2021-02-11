@@ -36,7 +36,7 @@ export default {
   methods: {
     getList(){
             axios
-                .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?language=fr&num=5&offset=0')
+                .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?language=fr')
                 .then(response => (this.listeCarte = response.data))
           },
     visuliserCarte(carte){
